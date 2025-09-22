@@ -4,26 +4,28 @@
 <!---->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>64 Garage</title>
 </head>
+
 <body>
-        <!--HEADER-->
+    <!--HEADER-->
     <div class="div-header">
         <header class="Header">
             <h1 class="h1-nama_toko">64 Garage</h1>
             <p class="Slogan">By Collectors, For Collectors</p>
-            <img src="asset/64_Garage.png" alt=""  width="200px"/>
+            <img src="asset/64_Garage.png" alt="" width="200px" />
         </header>
-        </div>
-        <!--END HEADER-->
+    </div>
+    <!--END HEADER-->
 
-        <!-- NAVBAR -->
-        <div class="div-navbar">
-            <a href="index.html" class="Home-navbar">Home</a>
-            <!-- <a href="Stock.html" class="stock-navbar">Stock</a>
+    <!-- NAVBAR -->
+    <div class="div-navbar">
+        <a href="index.html" class="Home-navbar">Home</a>
+        <!-- <a href="Stock.html" class="stock-navbar">Stock</a>
             <a href="Cara_Belanja.html" class="cara-navbar">Cara Belanja</a>
             <a href="About.html" class="about-navbar">About Store</a> -->
     </div>
@@ -31,63 +33,80 @@
 
     <!--CONTENT 1-->
     <div class="div-content-index">
-    <section class="section_content-index">
-        <h1 class="judul-index">OUR COLLECTION   </h1>
-        <main class="Stock-index">
-            <div class="Model1-index">
-            <img class="Model1-index" src="Asset/Model 2.jpg" width="400" height="300" alt="Lamborghini Aventador LP750-4"/>
-            <H3 class="Mobiil1Judul-index">Lamborgini Aventador LP750-4 </H3>
-           <table border="1" class="List-spec-razer-index">
-                <tr>
-                    <td class="List-spec-razer-index"> Brand </td> <!-- Memanggil Data dari CSS sementara tidak ada -->
-                    <td class="List-spec-ralzer-index">Tardis</td>
-                </tr>
-                <tr>
-                    <td>Color</td>
-                    <td>Red</td>
-                </tr>
-                <tr>
-                    <td>Condition</td>
-                    <td>Sealed</td>
-                </tr>
-                <tr>
-                    <td>Windows 11</td>
-                    <td>excellent</td>
-           </table>
-            <!-- <a href="Model1.html" class="garage-tombol-index">LIHAT SPESIFIKASI</a> -->
-        </div>
-        </main>
-    </section>
+        <section class="section_content-index">
+            <h1 class="judul-index">OUR COLLECTION </h1>
+            <main class="Stock-index">
+                <div class="Model1-index">
+                    <img class="Model1-index" src="Asset/Model 2.jpg" width="400" height="300"
+                        alt="Lamborghini Aventador LP750-4" />
+                    <H3 class="Mobiil1Judul-index">Lamborgini Aventador LP750-4 </H3>
+                    <table border="1" class="List-spec-razer-index">
+                        <tr>
+                            <td class="List-spec-razer-index"> Brand </td>
+                            <!-- Memanggil Data dari CSS sementara tidak ada -->
+                            <td class="List-spec-ralzer-index">Tardis</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Red</td>
+                        </tr>
+                        <tr>
+                            <td>Condition</td>
+                            <td>Sealed</td>
+                        </tr>
+                        <tr>
+                            <td>Windows 11</td>
+                            <td>excellent</td>
+                    </table>
+                    <!-- <a href="Model1.html" class="garage-tombol-index">LIHAT SPESIFIKASI</a> -->
+                </div>
+            </main>
+        </section>
     </div>
     <!--CONTENT 1 END-->
 
+    <!-- Form Area -->
+    <h2>Formulir Kontak</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="fullname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="emailaddr" required><br><br>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="usermessage" rows="4" required></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+    <!-- End Form Area -->
+
     <!--FOOTER-->
     <div class="div-footer">
-    <footer class="footer">
-        <div class="Informasi">
-            <img src="asset/Logo.png" alt="" />
-            <p class="footer_text">Build your dream collection, complete your garage with our exclusive diecast models.</p>
-            <h2 class="info_toko">Where Diecast Dreams Come True</h2>
-            <p class="alamat">Jl. Bedugul No.39, Sidakarya, Denpasar Selatan, Kota Denpasar, Bali 80224</p>
-        </div>
-        <div class="contactUS">
-            <h2 class="contact">Stay In Touch With Us</h2>
-            <p class="Telpon">Call Us: 089678696049</p>
-            <P class="gmail">64Garage@Gmail.com</P>
-        </div>
-        <h2 class="copyright-index">Copyright© 2025 64Garage.</h2> 
-        <div class="Bantuan">
-            <H1>BANTUAN</H1>
+        <footer class="footer">
+            <div class="Informasi">
+                <img src="asset/Logo.png" alt="" />
+                <p class="footer_text">Build your dream collection, complete your garage with our exclusive diecast
+                    models.</p>
+                <h2 class="info_toko">Where Diecast Dreams Come True</h2>
+                <p class="alamat">Jl. Bedugul No.39, Sidakarya, Denpasar Selatan, Kota Denpasar, Bali 80224</p>
+            </div>
+            <div class="contactUS">
+                <h2 class="contact">Stay In Touch With Us</h2>
+                <p class="Telpon">Call Us: 089678696049</p>
+                <P class="gmail">64Garage@Gmail.com</P>
+            </div>
+            <h2 class="copyright-index">Copyright© 2025 64Garage.</h2>
+            <div class="Bantuan">
+                <H1>BANTUAN</H1>
                 <ul>
                     <!-- <li><a href="Cara_Belanja.html" class="Cara_Belanja">Pembayaran</li>
                     <li><a href="Cara_Belanja.html" class="Cara_Belanja">Cara Pembayaran</li> -->
                     <li><a href="About.html" class="About-us-index">About US</li>
                 </ul>
-        </div>   
-    </footer>
+            </div>
+        </footer>
     </div>
-    
-
     <!--END FOOTER-->
 </body>
 </html>
