@@ -18,10 +18,10 @@
     <header class="main-header">
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Our_Collection.html">COLLECTION</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#collection">COLLECTION</a></li>
                 <li><a href="index.html"><img class="logo_navbar" src="asset/navlogo.png" alt=""></a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#form">FEEDBACK</a></li>
                 <li><a href="About.html">ABOUT</a></li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
 <!-- End Header -->
 
     <!-- Home Area -->
-    <main class="home-container">
+    <main class="home-container" id="home">
         <div class="home-right">
             <div class="centered">
                 <div class="textbox">
@@ -45,33 +45,33 @@
         </div>
         <div class="home-left">
             <div class="centered">
-                <img class="home-image" src="asset/64_Garage.png" alt="" width="300px" height="300px">
+                <img class="home-image" src="asset/64_Garage.png" alt="" >
             </div>
         </div>
     </main>
     <!-- End Home Area -->
 
 <!-- collection area -->
- <div class="judul-collection">
+ <div class="judul-collection" id="collection">
         <h2>Our Collection</h2>
  </div>
     <section class="collection-container">
             <div class="card1">
-                <img src="asset/Model 1.jpg" alt="Car 1" style="100%">
+                <img src="asset/Model 1.jpg" alt="Car 1">
                 <h3>G83 Brabus Silver</h3>
                 <p class="price">Rp. 2.100.000</p>
                 <p>Luxury Meets Unstoppable Power.</p>
                 <p><button>Add To Cart</button></p>
             </div>
             <div class="card2">
-                <img src="asset/Model 2.jpg" alt="Car 2 " style="100%">
+                <img src="asset/Model 2.jpg" alt="Car 2 ">
                 <h3>Lamborghini Aventador LP750-4</h3>
                 <p class="price">Rp 2.000.000</p>
                 <p>Pure Adrenaline On Four Wheels.</p>
                 <p><button>Add To Cart</button></p>
             </div>
             <div class="card3">
-                <img src="asset/Model 3.jpg" alt="Car 3" style="100%">
+                <img src="asset/Model 3.jpg" alt="Car 3">
                 <h3>2Ferrari F40 Classic Gas Monkey Garage</h3>
                 <p class="price">Rp 1.335.000</p>
                 <p>A Timeless Icon of Speed and Style.</p>
@@ -83,9 +83,10 @@
 
     <!-- Form Area -->
     <section class="form" id="form">
+    <h2>Contact Us</h2>
         <div class="form-area">
-            <h2>Contact Us</h2>
             <form action="submit_form.php" method="post">
+                <ul>
                 <label for="name">Nama Lengkap:</label>
                 <input type="text" id="name" name="fullname" required><br><br>
 
@@ -96,6 +97,8 @@
                 <textarea id="message" name="usermessage" rows="4" required></textarea><br><br>
 
                 <button type="submit">Send</button>
+                
+                </ul>
             </form>
 
             <p id="footer_text">Build your dream collection, complete your garage with our exclusive diecast
